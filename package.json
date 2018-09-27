@@ -1,0 +1,61 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard 'src/**/*.js'",
+    "prod": "rm -Rf app/static && webpack --mode=production",
+    "dev": "rm -Rf app/static && webpack --mode=development",
+    "watch": "rm -Rf app/static && webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igironv/chat.git"
+  },
+  "keywords": [
+    "chat",
+    "react",
+    "nodejs",
+    "expressjs"
+  ],
+  "authors": [
+    {
+      "name": "Irving Girón Victoria",
+      "github": "igironv"
+    },
+    {
+      "name": "Fabian Perez Bautista",
+      "github": "cris19"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igironv/chat/issues"
+  },
+  "homepage": "https://github.com/igironv/chat#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "standard": "^12.0.1",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "express": "^4.16.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  }
+}
